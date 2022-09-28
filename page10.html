@@ -394,12 +394,9 @@
                     </ul>
                 </div>
             </nav>
-            <form class="search-form" id="searchform" action="https://www.cxyhub.com/" method="get">
-                <button type="button" class="btn-search" id="searchsubmit"><svg class="wb-icon wbsico-search">
-                        <use xlink:href="#wbsico-search"></use>
-                    </svg></button>
-                <input type="text" class="form-control" name="s" id="s" placeholder="搜索Search" />
-            </form>
+            <div class="search-form"> <button class="custom-btn btn-Search"
+                    onclick="alert('PC端请按Ctrl+F键，移动端请点击浏览器工具箱内的页面查找按钮')">高级搜索<div class="dot"></div></button>
+            </div>
         </div>
     </header>
 
@@ -411,18 +408,19 @@
             <div class="title-floor">
                 <h3>全部插件</h3>
                 <p class="tf-ft">
-                    <a class="view-more" href="http://www.cxyhub.com/">全部</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/hot/">热门</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="http://www.cxyhub.com/it">程序员必备</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/bilibili/">B站</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/optimize/">优化</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/work/">办公</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/tool/">工具</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/development/">开发</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/movie/">影音</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/beauty/">美化</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/shop/">购物</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/data/">资源</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="quanbu">全部</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="remen">火热</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="ITneed">程序员的最爱</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="bilibili">哔哩哔哩</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="youhua">完善优化</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="bangong">工作</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="gongju">工具</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="kaifa">开发设计</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="yingyin">影视音乐</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="meihua">美工</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="shopping">电商</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="ziyuan">其他资源</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="btn1">请求</a>
                 </p>
             </div>
 
@@ -453,7 +451,7 @@
     <footer class="footer">
 
         <div class="copyright">
-            <a href="https://dishitiangege.gitee.io/personal-blog2">个人博客</a>
+            <a href="https://dishitiangege.gitee.io/personal-blog2">友情链接：个人博客</a>
                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="ib"><a href="mailto:1282997784@qq.com"
                     rel="home">邮箱：请点击</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="ib">Copyright © 2022-2099</span>
@@ -472,7 +470,20 @@
         </svg>
     </a>
 
+    <script>
+        $('#btn1').click(function (e) {
+            e.preventDefault()
+            $.ajax({
+                type: 'get',
+                url: "https://www.cxyhub.com/all/optimize/585/",
+                dataType: "html",
+                success: function (data) {
+                    console.log(data);
+                }
+            })
 
+        })
+    </script>
 
 </body>
 

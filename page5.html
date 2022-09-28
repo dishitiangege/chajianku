@@ -17,6 +17,8 @@
 
     <meta name="description" content="这是恒哥整理网上的插件资源制作的非常全面的独家私人插件库。">
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="alternate" type="application/rss+xml" title="恒哥私人插件库 &raquo; 个人博客"
         href="https://dishitiangege.gitee.io/personal-blog2" />
     <style id='global-styles-inline-css' type='text/css'>
@@ -394,12 +396,9 @@
                     </ul>
                 </div>
             </nav>
-            <form class="search-form" id="searchform" action="https://www.cxyhub.com/" method="get">
-                <button type="button" class="btn-search" id="searchsubmit"><svg class="wb-icon wbsico-search">
-                        <use xlink:href="#wbsico-search"></use>
-                    </svg></button>
-                <input type="text" class="form-control" name="s" id="s" placeholder="搜索Search" />
-            </form>
+            <div class="search-form"> <button class="custom-btn btn-Search"
+                    onclick="alert('PC端请按Ctrl+F键，移动端请点击浏览器工具箱内的页面查找按钮')">高级搜索<div class="dot"></div></button>
+            </div>
         </div>
     </header>
 
@@ -411,18 +410,18 @@
             <div class="title-floor">
                 <h3>全部插件</h3>
                 <p class="tf-ft">
-                    <a class="view-more" href="http://www.cxyhub.com/">全部</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/hot/">热门</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="http://www.cxyhub.com/it">程序员必备</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/bilibili/">B站</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/optimize/">优化</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/work/">办公</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/tool/">工具</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/development/">开发</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/movie/">影音</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/beauty/">美化</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/shop/">购物</a>&nbsp;&nbsp;&nbsp;
-                    <a class="view-more" href="https://www.cxyhub.com/all/data/">资源</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="quanbu">全部</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="remen">火热</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="ITneed">程序员的最爱</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="bilibili">哔哩哔哩</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="youhua">完善优化</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="bangong">工作</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="gongju">工具</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="kaifa">开发设计</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="yingyin">影视音乐</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="meihua">美工</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="shopping">电商</a>&nbsp;&nbsp;&nbsp;
+                    <a class="view-more" id="ziyuan">其他资源</a>&nbsp;&nbsp;&nbsp;
                 </p>
             </div>
 
@@ -443,7 +442,7 @@
                                     <div class="plugin-head-title" title="Scrn.li - 截图工具和编辑器">
                                         Scrn.li - 截图工具和编辑器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -478,7 +477,7 @@
                                     <div class="plugin-head-title" title="Reloader">
                                         Reloader </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -513,7 +512,7 @@
                                     <div class="plugin-head-title" title="淘宝图片搜索 - 一键搜同款">
                                         淘宝图片搜索 - 一键搜同款 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -549,7 +548,7 @@
                                     <div class="plugin-head-title" title="Kopernio - powered by Web of Science">
                                         Kopernio - powered by Web of Science </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -584,7 +583,7 @@
                                     <div class="plugin-head-title" title="Helium 10">
                                         Helium 10 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -620,7 +619,7 @@
                                     <div class="plugin-head-title" title="Google 日历">
                                         Google 日历 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             办公 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -655,7 +654,7 @@
                                     <div class="plugin-head-title" title="Evernote Web">
                                         Evernote Web </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             办公 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -692,7 +691,7 @@
                                     <div class="plugin-head-title" title="什么值得买 实时推送">
                                         什么值得买 实时推送 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             购物 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -729,7 +728,7 @@
                                     <div class="plugin-head-title" title="迅雷下载支持 for Mac (旧版)">
                                         迅雷下载支持 for Mac (旧版) </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -765,7 +764,7 @@
                                     <div class="plugin-head-title" title="一键翻译">
                                         一键翻译 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -800,7 +799,7 @@
                                     <div class="plugin-head-title" title="Weather 天气插件">
                                         Weather 天气插件 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -835,7 +834,7 @@
                                     <div class="plugin-head-title" title="潮汐-极简番茄钟与白噪音">
                                         潮汐-极简番茄钟与白噪音 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -872,7 +871,7 @@
                                     <div class="plugin-head-title" title="千军万马资源下载器">
                                         千军万马资源下载器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -908,7 +907,7 @@
                                     <div class="plugin-head-title" title="推特翻译熊 - Twitter with Baidu Translator">
                                         推特翻译熊 - Twitter with Baidu Translator </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -943,7 +942,7 @@
                                     <div class="plugin-head-title" title="极客族公共加速服务">
                                         极客族公共加速服务 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -978,7 +977,7 @@
                                     <div class="plugin-head-title" title="强制网页使用自定义字体">
                                         强制网页使用自定义字体 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1013,7 +1012,7 @@
                                     <div class="plugin-head-title" title="Header Editor">
                                         Header Editor </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1048,7 +1047,7 @@
                                     <div class="plugin-head-title" title="汇率转换">
                                         汇率转换 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1084,7 +1083,7 @@
                                     <div class="plugin-head-title" title="ENFI Downloader Assistant - ENFI下载器助手">
                                         ENFI Downloader Assistant - ENFI下载器助手 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1119,7 +1118,7 @@
                                     <div class="plugin-head-title" title="XDM Hook for Linux and Mac">
                                         XDM Hook for Linux and Mac </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1155,7 +1154,7 @@
                                     <div class="plugin-head-title" title="Powerful Pixiv Downloader">
                                         Powerful Pixiv Downloader </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1190,7 +1189,7 @@
                                     <div class="plugin-head-title" title="比价狗-网购省钱神器：自动领券、比价、查看历史价格">
                                         比价狗-网购省钱神器：自动领券、比价、查看历史价格 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1225,7 +1224,7 @@
                                     <div class="plugin-head-title" title="SafeEngine">
                                         SafeEngine </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1260,7 +1259,7 @@
                                     <div class="plugin-head-title" title="Aria2 for Chrome">
                                         Aria2 for Chrome </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1297,7 +1296,7 @@
                                     <div class="plugin-head-title" title="添加到aria2">
                                         添加到aria2 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1334,7 +1333,7 @@
                                     <div class="plugin-head-title" title="Edge Translate 侧边翻译">
                                         Edge Translate 侧边翻译 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1372,7 +1371,7 @@
                                     <div class="plugin-head-title" title="Online Download Manager 下载管理器">
                                         Online Download Manager 下载管理器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1409,7 +1408,7 @@
                                     <div class="plugin-head-title" title="Clear Cache 清理缓存">
                                         Clear Cache 清理缓存 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             开发 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1447,7 +1446,7 @@
                                     <div class="plugin-head-title" title="迅雷下载支持">
                                         迅雷下载支持 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1483,7 +1482,7 @@
                                     <div class="plugin-head-title" title="Online UniConverter - 在线视频音频转换器">
                                         Online UniConverter - 在线视频音频转换器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1518,7 +1517,7 @@
                                     <div class="plugin-head-title" title="ng-inspector for AngularJS">
                                         ng-inspector for AngularJS </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1553,7 +1552,7 @@
                                     <div class="plugin-head-title" title="快捷扩展管理">
                                         快捷扩展管理 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1588,7 +1587,7 @@
                                     <div class="plugin-head-title" title="ReRes">
                                         ReRes </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1623,7 +1622,7 @@
                                     <div class="plugin-head-title" title="淘宝图片搜索 - 一键搜同款">
                                         淘宝图片搜索 - 一键搜同款 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             购物 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1658,7 +1657,7 @@
                                     <div class="plugin-head-title" title="Multi-highlight">
                                         Multi-highlight </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1694,7 +1693,7 @@
                                     <div class="plugin-head-title" title="TikTok™ Viewer and Downloader">
                                         TikTok™ Viewer and Downloader </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1729,7 +1728,7 @@
                                     <div class="plugin-head-title" title="FasterChrome">
                                         FasterChrome </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1764,7 +1763,7 @@
                                     <div class="plugin-head-title" title="Copy All Urls">
                                         Copy All Urls </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             办公 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1801,7 +1800,7 @@
                                     <div class="plugin-head-title" title="SimpRead 简悦">
                                         SimpRead 简悦 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1836,7 +1835,7 @@
                                     <div class="plugin-head-title" title="Chrome 历史记录和缓存清理">
                                         Chrome 历史记录和缓存清理 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             优化 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1873,7 +1872,7 @@
                                     <div class="plugin-head-title" title="迷你派采集器">
                                         迷你派采集器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             开发 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1913,7 +1912,7 @@
                                     <div class="plugin-head-title" title="JSONViewer">
                                         JSONViewer </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             开发 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1950,7 +1949,7 @@
                                     <div class="plugin-head-title" title="Patreon Downloader - Patreon图片批量下载">
                                         Patreon Downloader - Patreon图片批量下载 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -1986,7 +1985,7 @@
                                     <div class="plugin-head-title" title="Additor - 书签管理和文本高亮Highlighter工具">
                                         Additor - 书签管理和文本高亮Highlighter工具 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2022,7 +2021,7 @@
                                     <div class="plugin-head-title" title="LINER - 网页、PDF标记工具">
                                         LINER - 网页、PDF标记工具 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2057,7 +2056,7 @@
                                     <div class="plugin-head-title" title="Auto Refresh Pro">
                                         Auto Refresh Pro </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2092,7 +2091,7 @@
                                     <div class="plugin-head-title" title="声海盗">
                                         声海盗 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2127,7 +2126,7 @@
                                     <div class="plugin-head-title" title="钦定字体 Appoint Font">
                                         钦定字体 Appoint Font </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             办公 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2162,7 +2161,7 @@
                                     <div class="plugin-head-title" title="QPush - 从电脑快推文字到手机">
                                         QPush - 从电脑快推文字到手机 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             办公 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2200,7 +2199,7 @@
                                     <div class="plugin-head-title" title="惠惠购物助手">
                                         惠惠购物助手 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             购物 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2236,7 +2235,7 @@
                                     <div class="plugin-head-title" title="京价保">
                                         京价保 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             购物 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2274,7 +2273,7 @@
                                     <div class="plugin-head-title" title="Smart PDF 编辑压缩转换PDF文件">
                                         Smart PDF 编辑压缩转换PDF文件 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2310,7 +2309,7 @@
                                     <div class="plugin-head-title" title="GoFullPage-FullPageScreenCapture">
                                         GoFullPage-FullPageScreenCapture </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2347,7 +2346,7 @@
                                     <div class="plugin-head-title" title="Save All Resources">
                                         Save All Resources </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2382,7 +2381,7 @@
                                     <div class="plugin-head-title" title="Text 文本编辑器">
                                         Text 文本编辑器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2417,7 +2416,7 @@
                                     <div class="plugin-head-title" title="Adobe Acrobat PDF 查看、转换、压缩">
                                         Adobe Acrobat PDF 查看、转换、压缩 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2452,7 +2451,7 @@
                                     <div class="plugin-head-title" title="Sea Foam - 海水泡沫主题插件">
                                         Sea Foam - 海水泡沫主题插件 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2488,7 +2487,7 @@
                                     <div class="plugin-head-title" title="LaTeX2Word-Equation - LaTeX转为Word公式编辑器">
                                         LaTeX2Word-Equation - LaTeX转为Word公式编辑器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2523,7 +2522,7 @@
                                     <div class="plugin-head-title" title="Seller+">
                                         Seller+ </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2559,7 +2558,7 @@
                                     <div class="plugin-head-title" title="Wordtune - AI-powered Writing Companion">
                                         Wordtune - AI-powered Writing Companion </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2596,7 +2595,7 @@
                                     <div class="plugin-head-title" title="Stream Recorder - download HLS as MP4">
                                         Stream Recorder - download HLS as MP4 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2631,7 +2630,7 @@
                                     <div class="plugin-head-title" title="下载+">
                                         下载+ </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2666,7 +2665,7 @@
                                     <div class="plugin-head-title" title="Video Downloader for Chrome">
                                         Video Downloader for Chrome </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2702,7 +2701,7 @@
                                     <div class="plugin-head-title" title="哈士奇-新版">
                                         哈士奇-新版 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             购物 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2737,7 +2736,7 @@
                                     <div class="plugin-head-title" title="Reproductor M3U8 - HLS播放器">
                                         Reproductor M3U8 - HLS播放器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2772,7 +2771,7 @@
                                     <div class="plugin-head-title" title="視頻速度控制器">
                                         視頻速度控制器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2808,7 +2807,7 @@
                                     <div class="plugin-head-title" title="One-click management extension - 一键管理扩展">
                                         One-click management extension - 一键管理扩展 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2843,7 +2842,7 @@
                                     <div class="plugin-head-title" title="PanicButton">
                                         PanicButton </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2878,7 +2877,7 @@
                                     <div class="plugin-head-title" title="EarData 插件助手">
                                         EarData 插件助手 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2913,7 +2912,7 @@
                                     <div class="plugin-head-title" title="Flash Video Downloader Plus">
                                         Flash Video Downloader Plus </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2948,7 +2947,7 @@
                                     <div class="plugin-head-title" title="翻译侠（Translate Man）Plus">
                                         翻译侠（Translate Man）Plus </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -2985,7 +2984,7 @@
                                     <div class="plugin-head-title" title="LeapCa 跨境运营插件">
                                         LeapCa 跨境运营插件 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3022,7 +3021,7 @@
                                     <div class="plugin-head-title" title="Dark Theme 黑暗模式">
                                         Dark Theme 黑暗模式 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3058,7 +3057,7 @@
                                     <div class="plugin-head-title" title="Video Speed Controller 视频速度控制器">
                                         Video Speed Controller 视频速度控制器 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3093,7 +3092,7 @@
                                     <div class="plugin-head-title" title="Malwarebytes 浏览器卫士">
                                         Malwarebytes 浏览器卫士 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3128,7 +3127,7 @@
                                     <div class="plugin-head-title" title="Youtube 广告过滤助手">
                                         Youtube 广告过滤助手 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3163,7 +3162,7 @@
                                     <div class="plugin-head-title" title="Honey 优惠券">
                                         Honey 优惠券 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3198,7 +3197,7 @@
                                     <div class="plugin-head-title" title="MetaMask 以太坊助手">
                                         MetaMask 以太坊助手 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3233,7 +3232,7 @@
                                     <div class="plugin-head-title" title="Grammarly 写作助手">
                                         Grammarly 写作助手 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3268,7 +3267,7 @@
                                     <div class="plugin-head-title" title="Screencastify 屏幕录像">
                                         Screencastify 屏幕录像 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3304,7 +3303,7 @@
                                     <div class="plugin-head-title" title="Avast SafePrice 比价、交易、优惠券">
                                         Avast SafePrice 比价、交易、优惠券 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3339,7 +3338,7 @@
                                     <div class="plugin-head-title" title="Teleparty：与好友一起远程看电视">
                                         Teleparty：与好友一起远程看电视 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3374,7 +3373,7 @@
                                     <div class="plugin-head-title" title="Avast 在线安全卫士 &#038; 隐私保护">
                                         Avast 在线安全卫士 &#038; 隐私保护 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3409,7 +3408,7 @@
                                     <div class="plugin-head-title" title="Cisco Webex 网络视频会议">
                                         Cisco Webex 网络视频会议 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3444,7 +3443,7 @@
                                     <div class="plugin-head-title" title="Read&#038;Write 读写助手">
                                         Read&#038;Write 读写助手 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3479,7 +3478,7 @@
                                     <div class="plugin-head-title" title="Windows 10 Accounts">
                                         Windows 10 Accounts </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3514,7 +3513,7 @@
                                     <div class="plugin-head-title" title="Lofter图片下载助手">
                                         Lofter图片下载助手 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3549,7 +3548,7 @@
                                     <div class="plugin-head-title" title="Get WPS Office">
                                         Get WPS Office </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3585,7 +3584,7 @@
                                     <div class="plugin-head-title" title="bilibili视频播放加速">
                                         bilibili视频播放加速 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3620,7 +3619,7 @@
                                     <div class="plugin-head-title" title="AcFun Video Download">
                                         AcFun Video Download </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3655,7 +3654,7 @@
                                     <div class="plugin-head-title" title="网页表格导出为 Excel 表格">
                                         网页表格导出为 Excel 表格 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3690,7 +3689,7 @@
                                     <div class="plugin-head-title" title="迅雷、快车、旋风专用链自动转换绿色版">
                                         迅雷、快车、旋风专用链自动转换绿色版 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3726,7 +3725,7 @@
                                     <div class="plugin-head-title" title="User-Agent Switcher and Manager">
                                         User-Agent Switcher and Manager </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3762,7 +3761,7 @@
                                     <div class="plugin-head-title" title="AutoPagerize">
                                         AutoPagerize </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3797,7 +3796,7 @@
                                     <div class="plugin-head-title" title="Page Ruler">
                                         Page Ruler </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3834,7 +3833,7 @@
                                     <div class="plugin-head-title" title="GameLoad - play Unity Games (Win only)">
                                         GameLoad - play Unity Games (Win only) </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3869,7 +3868,7 @@
                                     <div class="plugin-head-title" title="恢复关闭的标签页">
                                         恢复关闭的标签页 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3904,7 +3903,7 @@
                                     <div class="plugin-head-title" title="Set Character Encoding">
                                         Set Character Encoding </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3940,7 +3939,7 @@
                                     <div class="plugin-head-title" title="Morpheon Dark - 黑暗壁纸主题">
                                         Morpheon Dark - 黑暗壁纸主题 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -3975,7 +3974,7 @@
                                     <div class="plugin-head-title" title="Native HLS Playback">
                                         Native HLS Playback </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4011,7 +4010,7 @@
                                     <div class="plugin-head-title" title="myBase/Webcollect">
                                         myBase/Webcollect </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4047,7 +4046,7 @@
                                     <div class="plugin-head-title" title="Allow CORS: Access-Control-Allow-Origin">
                                         Allow CORS: Access-Control-Allow-Origin </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4083,7 +4082,7 @@
                                     <div class="plugin-head-title" title="MindZip - 记住你所有学习过的内容！">
                                         MindZip - 记住你所有学习过的内容！ </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             办公 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4121,7 +4120,7 @@
                                     <div class="plugin-head-title" title="云神价">
                                         云神价 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             购物 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4157,7 +4156,7 @@
                                     <div class="plugin-head-title" title="百度贴吧助手">
                                         百度贴吧助手 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4193,7 +4192,7 @@
                                     <div class="plugin-head-title" title="Auto Tab Discard 标签页自动休眠">
                                         Auto Tab Discard 标签页自动休眠 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             优化 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4230,7 +4229,7 @@
                                     <div class="plugin-head-title" title="React Developer Tools">
                                         React Developer Tools </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4265,7 +4264,7 @@
                                     <div class="plugin-head-title" title="午夜黑主题">
                                         午夜黑主题 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4302,7 +4301,7 @@
                                     <div class="plugin-head-title" title="Zoom Scheduler 云会议">
                                         Zoom Scheduler 云会议 </div>
                                     <div class="post-cate plugin-head-cate">
-                                        <div class="cate-tag">
+                                        <div class="tages">
                                             工具 </div>&nbsp;
                                         <h3 class="sticky" title="好评">★★★☆☆</h3>
                                     </div>
@@ -4377,7 +4376,7 @@
                                 <div class="plugin-head-title" title="McAfee Endpoint Security Web 控制">
                                     McAfee Endpoint Security Web 控制 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4412,7 +4411,7 @@
                                 <div class="plugin-head-title" title="ePub阅读器">
                                     ePub阅读器 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4447,7 +4446,7 @@
                                 <div class="plugin-head-title" title="ApiPOST">
                                     ApiPOST </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4483,7 +4482,7 @@
                                 <div class="plugin-head-title" title="HTML Tree Generator - HTML结构树生成器">
                                     HTML Tree Generator - HTML结构树生成器 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4518,7 +4517,7 @@
                                 <div class="plugin-head-title" title="VisBug">
                                     VisBug </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4554,7 +4553,7 @@
                                 <div class="plugin-head-title" title="Huge Amazon Search Suggestion Expander">
                                     Huge Amazon Search Suggestion Expander </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4589,7 +4588,7 @@
                                 <div class="plugin-head-title" title="Synology Web Clipper">
                                     Synology Web Clipper </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4624,7 +4623,7 @@
                                 <div class="plugin-head-title" title="Docker学习">
                                     Docker学习 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4659,7 +4658,7 @@
                                 <div class="plugin-head-title" title="Ajax Interceptor">
                                     Ajax Interceptor </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4694,7 +4693,7 @@
                                 <div class="plugin-head-title" title="CTG Plugins">
                                     CTG Plugins </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4729,7 +4728,7 @@
                                 <div class="plugin-head-title" title="Chrome Better History">
                                     Chrome Better History </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4766,7 +4765,7 @@
                                 <div class="plugin-head-title" title="Video speed controls">
                                     Video speed controls </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4801,7 +4800,7 @@
                                 <div class="plugin-head-title" title="乎视-下载知乎视频">
                                     乎视-下载知乎视频 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4836,7 +4835,7 @@
                                 <div class="plugin-head-title" title="Pinterest视频下载器">
                                     Pinterest视频下载器 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4871,7 +4870,7 @@
                                 <div class="plugin-head-title" title="jietudashi - 截图大师插件">
                                     jietudashi - 截图大师插件 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4906,7 +4905,7 @@
                                 <div class="plugin-head-title" title="美编助手">
                                     美编助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4941,7 +4940,7 @@
                                 <div class="plugin-head-title" title="Xodo PDF Viewer &#038; Editor">
                                     Xodo PDF Viewer &#038; Editor </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -4976,7 +4975,7 @@
                                 <div class="plugin-head-title" title="Words Discoverer 发现重点单词">
                                     Words Discoverer 发现重点单词 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         办公 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5013,7 +5012,7 @@
                                 <div class="plugin-head-title" title="壹伴 · 小插件">
                                     壹伴 · 小插件 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         办公 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5050,7 +5049,7 @@
                                 <div class="plugin-head-title" title="Pinbox - 跨平台收藏">
                                     Pinbox - 跨平台收藏 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         办公 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5088,7 +5087,7 @@
                                 <div class="plugin-head-title" title="自选基金助手">
                                     自选基金助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5124,7 +5123,7 @@
                                 <div class="plugin-head-title" title="马甲">
                                     马甲 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         开发 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5161,7 +5160,7 @@
                                 <div class="plugin-head-title" title="Pinterest 收藏按钮">
                                     Pinterest 收藏按钮 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5204,7 +5203,7 @@
                                 <div class="plugin-head-title" title="Dmail">
                                     Dmail </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5239,7 +5238,7 @@
                                 <div class="plugin-head-title" title="Snap Links">
                                     Snap Links </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5275,7 +5274,7 @@
                                 <div class="plugin-head-title" title="Tabs Outliner - 垂直标签页">
                                     Tabs Outliner - 垂直标签页 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5310,7 +5309,7 @@
                                 <div class="plugin-head-title" title="适用于Google Chrome™的HTML5视频速度控制">
                                     适用于Google Chrome™的HTML5视频速度控制 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5345,7 +5344,7 @@
                                 <div class="plugin-head-title" title="谷歌图书下载">
                                     谷歌图书下载 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5380,7 +5379,7 @@
                                 <div class="plugin-head-title" title="设备模拟器">
                                     设备模拟器 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5415,7 +5414,7 @@
                                 <div class="plugin-head-title" title="股票小助手">
                                     股票小助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5450,7 +5449,7 @@
                                 <div class="plugin-head-title" title="Aria2助手">
                                     Aria2助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5486,7 +5485,7 @@
                                 <div class="plugin-head-title" title="Shodan">
                                     Shodan </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5522,7 +5521,7 @@
                                 <div class="plugin-head-title" title="花瓣网页收藏工具（旧版）">
                                     花瓣网页收藏工具（旧版） </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5557,7 +5556,7 @@
                                 <div class="plugin-head-title" title="网页截图 - Screenshot Extension">
                                     网页截图 - Screenshot Extension </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5592,7 +5591,7 @@
                                 <div class="plugin-head-title" title="SingleFile">
                                     SingleFile </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5627,7 +5626,7 @@
                                 <div class="plugin-head-title" title="Gliffy Diagrams">
                                     Gliffy Diagrams </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5662,7 +5661,7 @@
                                 <div class="plugin-head-title" title="Enhanced GitHub - GitHub单个文件下载">
                                     Enhanced GitHub - GitHub单个文件下载 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5698,7 +5697,7 @@
                                 <div class="plugin-head-title" title="店透视">
                                     店透视 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5733,7 +5732,7 @@
                                 <div class="plugin-head-title" title="TronLink（波宝钱包）">
                                     TronLink（波宝钱包） </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5768,7 +5767,7 @@
                                 <div class="plugin-head-title" title="Markdown Here">
                                     Markdown Here </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5803,7 +5802,7 @@
                                 <div class="plugin-head-title" title="Last Tab">
                                     Last Tab </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5839,7 +5838,7 @@
                                 <div class="plugin-head-title" title="豆瓣电影放映厅">
                                     豆瓣电影放映厅 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5874,7 +5873,7 @@
                                 <div class="plugin-head-title" title="股票查看器">
                                     股票查看器 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5910,7 +5909,7 @@
                                 <div class="plugin-head-title" title="Bing New Tab 必应新标签页">
                                     Bing New Tab 必应新标签页 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5946,7 +5945,7 @@
                                 <div class="plugin-head-title" title="Web Clipper 网页剪藏">
                                     Web Clipper 网页剪藏 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         开发 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -5983,7 +5982,7 @@
                                 <div class="plugin-head-title" title="Git Master">
                                     Git Master </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         开发 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6022,7 +6021,7 @@
                                 <div class="plugin-head-title" title="Image Search Assistant 搜图助手">
                                     Image Search Assistant 搜图助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         开发 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6062,7 +6061,7 @@
                                 <div class="plugin-head-title" title="Google Keep 一键保存">
                                     Google Keep 一键保存 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6116,7 +6115,7 @@
                                 <div class="plugin-head-title" title="Custom Cursor 自定义光标">
                                     Custom Cursor 自定义光标 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6215,7 +6214,7 @@
                                 <div class="plugin-head-title" title="Amazon Assistant: 亚马逊助手">
                                     Amazon Assistant: 亚马逊助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6268,7 +6267,7 @@
                                 <div class="plugin-head-title" title="vGet Extension (Video Downloader, DLNA)">
                                     vGet Extension (Video Downloader, DLNA) </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6304,7 +6303,7 @@
                                 <div class="plugin-head-title" title="Elasticvue">
                                     Elasticvue </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6339,7 +6338,7 @@
                                 <div class="plugin-head-title" title="Html5 Video Speed Control">
                                     Html5 Video Speed Control </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6374,7 +6373,7 @@
                                 <div class="plugin-head-title" title="FakeScreenshot - 虚假截图生成器">
                                     FakeScreenshot - 虚假截图生成器 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6410,7 +6409,7 @@
                                 <div class="plugin-head-title" title="Google Maps select and search - 谷歌地图快速搜索插件">
                                     Google Maps select and search - 谷歌地图快速搜索插件 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6445,7 +6444,7 @@
                                 <div class="plugin-head-title" title="Simple Blocker">
                                     Simple Blocker </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6480,7 +6479,7 @@
                                 <div class="plugin-head-title" title="百度搜索+谷歌扩展">
                                     百度搜索+谷歌扩展 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6515,7 +6514,7 @@
                                 <div class="plugin-head-title" title="Terra Station">
                                     Terra Station </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6551,7 +6550,7 @@
                                 <div class="plugin-head-title" title="Host Switch Plus">
                                     Host Switch Plus </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6586,7 +6585,7 @@
                                 <div class="plugin-head-title" title="Roam-highlighter">
                                     Roam-highlighter </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6621,7 +6620,7 @@
                                 <div class="plugin-head-title" title="Multi Highlight - 网页关键词定位工具">
                                     Multi Highlight - 网页关键词定位工具 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6656,7 +6655,7 @@
                                 <div class="plugin-head-title" title="掘金快捷分享">
                                     掘金快捷分享 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6691,7 +6690,7 @@
                                 <div class="plugin-head-title" title="GraphiTabs - 标签管理插件">
                                     GraphiTabs - 标签管理插件 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6726,7 +6725,7 @@
                                 <div class="plugin-head-title" title="GNotes - 随笔记插件">
                                     GNotes - 随笔记插件 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6761,7 +6760,7 @@
                                 <div class="plugin-head-title" title="书签管理">
                                     书签管理 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6796,7 +6795,7 @@
                                 <div class="plugin-head-title" title="Iwara Downloader">
                                     Iwara Downloader </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6831,7 +6830,7 @@
                                 <div class="plugin-head-title" title="极简 Json 格式化">
                                     极简 Json 格式化 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6866,7 +6865,7 @@
                                 <div class="plugin-head-title" title="Web Scraper">
                                     Web Scraper </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6901,7 +6900,7 @@
                                 <div class="plugin-head-title" title="Rajiko - radiko.jp访问助手">
                                     Rajiko - radiko.jp访问助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6936,7 +6935,7 @@
                                 <div class="plugin-head-title" title="知乎文章下载">
                                     知乎文章下载 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -6971,7 +6970,7 @@
                                 <div class="plugin-head-title" title="Separate Window">
                                     Separate Window </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7007,7 +7006,7 @@
                                 <div class="plugin-head-title" title="牛魔王数据助手">
                                     牛魔王数据助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7042,7 +7041,7 @@
                                 <div class="plugin-head-title" title="Save All Resources">
                                     Save All Resources </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7077,7 +7076,7 @@
                                 <div class="plugin-head-title" title="Mooc Assistant慕课助手">
                                     Mooc Assistant慕课助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7112,7 +7111,7 @@
                                 <div class="plugin-head-title" title="Keepa - Amazon Price Tracker">
                                     Keepa - Amazon Price Tracker </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7148,7 +7147,7 @@
                                 <div class="plugin-head-title" title="Volume Control - 音量控制 (旧版)">
                                     Volume Control - 音量控制 (旧版) </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7183,7 +7182,7 @@
                                 <div class="plugin-head-title" title="波场TRON钱包">
                                     波场TRON钱包 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7220,7 +7219,7 @@
                                 <div class="plugin-head-title" title="Grabox 书签同步">
                                     Grabox 书签同步 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7257,7 +7256,7 @@
                                 <div class="plugin-head-title" title="Clear Cache 清理缓存">
                                     Clear Cache 清理缓存 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         优化 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7295,7 +7294,7 @@
                                 <div class="plugin-head-title" title="Postman">
                                     Postman </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7330,7 +7329,7 @@
                                 <div class="plugin-head-title" title="Google文档、表格及幻灯片的Office编辑扩展程序">
                                     Google文档、表格及幻灯片的Office编辑扩展程序 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7389,7 +7388,7 @@
                                 <div class="plugin-head-title" title="Bitmoji 表情">
                                     Bitmoji 表情 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7428,7 +7427,7 @@
                                 <div class="plugin-head-title" title="互联网作息表，working time 作息表">
                                     互联网作息表，working time 作息表 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         IT </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7464,7 +7463,7 @@
                                 <div class="plugin-head-title" title="Axure Share Extension for Chrome">
                                     Axure Share Extension for Chrome </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7500,7 +7499,7 @@
                                 <div class="plugin-head-title" title="Web Paint - 网页绘画涂鸦">
                                     Web Paint - 网页绘画涂鸦 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7536,7 +7535,7 @@
                                 <div class="plugin-head-title" title="EpubPress - Read the web offline">
                                     EpubPress - Read the web offline </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7571,7 +7570,7 @@
                                 <div class="plugin-head-title" title="梦想小说朗读助手">
                                     梦想小说朗读助手 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7606,7 +7605,7 @@
                                 <div class="plugin-head-title" title="Booksmart - 书签文件夹">
                                     Booksmart - 书签文件夹 </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7642,7 +7641,7 @@
                                 <div class="plugin-head-title" title="Fwm-highlight">
                                     Fwm-highlight </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7677,7 +7676,7 @@
                                 <div class="plugin-head-title" title="ASINKING Tool">
                                     ASINKING Tool </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7713,7 +7712,7 @@
                                 <div class="plugin-head-title" title="Amazon Index Checker AND Keyword Rank Checker">
                                     Amazon Index Checker AND Keyword Rank Checker </div>
                                 <div class="post-cate plugin-head-cate">
-                                    <div class="cate-tag">
+                                    <div class="tages">
                                         工具 </div>&nbsp;
                                     <h3 class="sticky" title="好评">★★★☆☆</h3>
                                 </div>
@@ -7740,11 +7739,12 @@
 
         <a class="btn btn-load-more" id="J_loadMoreBtn">加载更多</a>
         <div class="wb-navigation pagination" role="navigation">
-            <span aria-current="page" class="page-numbers current">1</span>
+            <a class="page-numbers" href="index.html">首页</a>
+            <a class="page-numbers" href="page1.html">1</a>
             <a class="page-numbers" href="page2.html">2</a>
             <a class="page-numbers" href="page3.html">3</a>
             <a class="page-numbers" href="page4.html">4</a>
-            <a class="page-numbers" href="page5.html">5</a>
+            <span aria-current="page" class="page-numbers current">5</span>
             <a class="page-numbers" href="page6.html">6</a>
             <a class="page-numbers" href="page7.html">7</a>
             <a class="page-numbers" href="page8.html">8</a>
@@ -7758,7 +7758,7 @@
     <footer class="footer">
 
         <div class="copyright">
-            <a href="https://dishitiangege.gitee.io/personal-blog2">个人博客</a>
+            <a href="https://dishitiangege.gitee.io/personal-blog2">友情链接：个人博客</a>
                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="ib"><a href="mailto:1282997784@qq.com"
                     rel="home">邮箱：请点击</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="ib">Copyright © 2022-2099</span>
